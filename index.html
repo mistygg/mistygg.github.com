@@ -1,0 +1,114 @@
+---
+layout: default
+---
+{% for post in paginator.posts %}
+<article class="desc-post">
+	<!--标题-->
+	<h1><a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+
+	<!--日期-->
+	<div class="desc">
+		<i class="fa fa-calendar"></i>
+		{% assign d = post.date | date: "%d" | plus:'0' %}
+		<a href="/archive/">{{ post.date | date: "%Y" }}/{{ post.date | date: "%m" }}/{{ post.date | date: "%d" }}</a>
+		&nbsp;&nbsp;
+		<i class="fa fa-folder-open-o"></i>
+		<a href="/category/">{{ post.categories }}</a>
+	</div>
+
+	<!--文章摘要-->
+	{% if post.fullview %}
+		<p>{{ post.content }}</p>
+	{% else %}
+			{% if post.shortinfo %}
+				<p>{{ post.shortinfo }}</p>
+			{% elsif post.description %}
+				<p>{{ post.description }}</p>
+			{% else %}
+				<p>{{ post.excerpt }}</p>
+			{% endif %}
+	{% endif %}
+	<a class="btn btn-info readmore" href="{{ post.url }}" role="button">ReadMore</a>
+</article>
+{% endfor %}
+
+<!-- start pagination  -->
+<div class="nav pagenav">
+	<ul class='pagination pagination-sm'>
+		{% if paginator.previous_page %}
+		<li>
+			{% if paginator.previous_page == 1 %}
+			<a href="/">pre</a>
+			{% else %}
+			<a href="/page{{ paginator.previous_page }}">pre</a>
+			{% endif %}
+		</li>
+		{% else %}
+		<li class="disabled">
+			<a href="javascript:;">pre</a>
+		</li>
+		{% endif %}
+
+		{% for pageNum in (1..paginator.total_pages) %}
+		{% if pageNum == 1 %}
+		{% if paginator.page == 1 %}
+		<li class='active'>
+			<a href="javascript:;">1</a>
+		</li>
+		{% else %}
+		<li>
+			<a href="/">1</a>
+		</li>
+		{% endif %}
+		{% elsif pageNum == paginator.total_pages %}
+		{% if paginator.page == paginator.total_pages %}
+		<li class='active'>
+			<a href="javascript:;">{{ paginator.page }}</a>
+		</li>
+		{% else %}
+		<li>
+			<a href="/page{{ paginator.total_pages }}">{{ paginator.total_pages }}</a>
+		</li>
+		{% endif %}
+		{% else %}
+		{% if paginator.previous_page == pageNum %}
+		{% if paginator.previous_page != 2 %}
+		<li class="disabled">
+			<a href="javascript:;">...</a>
+		</li>
+		{% endif %}
+		<li>
+			<a href="/page{{ pageNum }}">{{ pageNum }}</a>
+		</li>
+		{% endif %}
+		{% if paginator.page == pageNum %}
+		<li class='active'>
+			<a href="/page{{ pageNum }}">{{ pageNum }}</a>
+		</li>
+		{% endif %}
+		{% if paginator.next_page == pageNum %}
+		<li>
+			<a href="/page{{ pageNum }}">{{ pageNum }}</a>
+		</li>
+		{% if forloop.rindex != 2 %}
+		<li class="disabled">
+			<a href="javascript:;">...</a>
+		</li>
+		{% endif %}
+		{% assign nnPage = nil %}
+		{% assign ppPage = nil %}
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+
+		{% if paginator.next_page %}
+		<li>
+			<a href="/page{{ paginator.next_page }}">next</a>
+		</li>
+		{% else %}
+		<li class="disabled">
+			<a href="javascript:;">next</a>
+		</li>
+		{% endif %}
+	</ul>
+</div> <!-- end pagination -->
