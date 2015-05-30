@@ -1,17 +1,20 @@
 title: searchpcc
 paginate: 5
 email: your-email@domain.com
-description: >
+production_url: http://searchpcc.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://searchp.cc" # the base hostname & protocol for your site
 permalink: /:year:month:day.html
+
 # Build settings
 highlighter: pygments
 markdown: kramdown  # [ maruku | rdiscount | kramdown | redcarpet ]
+
 kramdown:
   input:          GFM
   auto_ids:       true
   auto_id_prefix: 'id-'
+
 # 网站描述
 description:  一个90后的个人网站。 IT，PHP，Java，Python 等等。邮箱：i@searchp.cc
 # 用户名，用来显示自己相关网络账号信息的。about.md之中。
