@@ -1,0 +1,197 @@
+body {
+    background: #e8e8e8;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;;
+}
+pre {
+    padding: 0px;
+    margin: 0px;
+}
+h1, h2, h3, h4 {
+    border-bottom: 1px solid #eee;
+}
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 19px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+
+h1 > a {
+    color: #000000;
+}
+
+h1 > a:hover {
+    color: #5bc0de;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        min-height: 40px;
+    }
+    .navbar-nav > li > a {
+        font-size: 14px;
+        padding-bottom: 11px;
+        padding-top: 11px;
+    }
+    .navbar-brand {
+        height: 42px;
+        line-height: 42px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+}
+.navbar-inverse {
+    background-image: none;
+}
+.page-content {
+    margin-top: 75px;
+}
+
+.fa {
+    color: #5bc0de;
+}
+
+.desc-post {
+    background: #ffffff;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 55px;
+    min-height: 200px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 30px #d3d3d3 ;
+    -moz-box-shadow: 0px 0px 30px #d3d3d3;
+    box-shadow: 0px 0px 30px #d3d3d3;
+}
+
+.pagenav {
+    float: right;
+}
+.readmore {
+    float: right;
+    margin-right: 20px;
+}
+/*post页面样式*/
+.post {
+    background: #ffffff;
+    padding: 20px;
+    padding-top: 4px;
+    margin-left: -10px;
+    margin-right: -10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 30px #d3d3d3 ;
+    -moz-box-shadow: 0px 0px 30px #d3d3d3;
+    box-shadow: 0px 0px 30px #d3d3d3;
+}
+
+.post img {
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px #e3e3e3;
+    -moz-box-shadow: 0px 0px 5px #e3e3e3 ;
+    box-shadow: 0px 0px 5px #e3e3e3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*页脚样式*/
+footer p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/*timeline*/
+.timeline {
+    margin-top: 75px;
+}
+
+
+/*category*/
+
+.category h2 {
+    font-size: 16px;
+}
+
+.category h1,h2 {
+    padding-bottom: 5px;
+
+}
+
+.category li {
+    list-style: none;
+}
+
+.category span {
+    font-size: 12px;
+}
+
+
+/*archive*/
+
+.archive h2 {
+    font-size: 16px;
+}
+.archive h1,h2 {
+    padding-bottom: 5px;
+}
+.archive li {
+    list-style: none;
+}
+.archive span {
+    font-size: 12px;
+}
+/*read*/
+.read h2 {
+    font-size: 16px;
+}
+
+.read h1,h2 {
+    padding-bottom: 5px;
+}
+
+.read li {
+    list-style: none;
+}
+
+.read span {
+    font-size: 12px;
+}
+
+.desc {
+    font-size: 12px;
+}
+
+.desc a:link {
+    text-decoration: none;
+}
+
+.desc a:visited {
+    text-decoration: none;
+}
+.desc a:hover {
+    text-decoration: none;
+}
+.desc a:active {
+    text-decoration: none;
+}
+/*read*/
+.about h2 {
+    font-size: 16px;
+}
+.about h1,h2 {
+    padding-bottom: 5px;
+}

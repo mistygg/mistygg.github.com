@@ -16,7 +16,7 @@ kramdown:
   auto_id_prefix: 'id-'
 
 # 网站描述
-description:  一个90后的个人网站。 IT，PHP，Java，Python 等等。邮箱：i@searchp.cc
+description:  一个90后的个人网站。 IT，php，Java，Python 等等。邮箱：i@searchp.cc
 # 用户名，用来显示自己相关网络账号信息的。about.md之中。
 username: searchpcc
 
