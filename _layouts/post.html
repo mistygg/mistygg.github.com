@@ -2,36 +2,48 @@
 layout: default
 ---
 <div class="post">
+	<!--文章标题和说明-->
+	<header>
+		<!--文章名称-->
+		<h1 class="post-title">{{ page.title }}</h1>
+		<!--文章描述，时间和分类-->
+		<p class="desc">
+			<i class="fa fa-calendar"></i>
+			{{ page.date | date: "%Y/%m/%d" }} &nbsp;&nbsp;
+			<i class="fa fa-folder-open-o fa-fw"></i>
+			<a href="/category/">{{ page.categories }}</a>
+		</p>
+	</header>
 
-  <!--文章标题和说明-->
-  <header>
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="desc">
-      <i class="fa fa-calendar"></i>
-      {{ page.date | date: "%Y/%m/%d" }} &nbsp;&nbsp;
-      <i class="fa fa-folder-open-o fa-fw"></i>
-      <a href="/category/">{{ page.categories }}</a>
-    </p>
-  </header>
+	<!--文章内容-->
+	<article class="post-content">
+		{{ content }}
+	</article>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+	<!--上下翻页-->
+	<ul class="pager pagination-sm">
+		<!--前一页-->
+		{% if page.previous %}
+		<li class="previous">
+			<a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
+		</li>
+		{% else %}
+		<li class="previous disabled">
+			<a>&larr; Previous</a>
+		</li>
+		{% endif %}
 
-  <!--实现上下翻页-->
-  <ul class="pager pagination-sm">
-    {% if page.previous %}
-      <li class="previous"><a href="{{ site.BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-    {% else %}
-      <li class="previous disabled"><a>&larr; Previous</a></li>
-    {% endif %}
-    {% if page.next %}
-      <li class="next"><a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-    {% else %}
-      <li class="next disabled"><a>Next &rarr;</a>
-    {% endif %}
-  </ul>
-
-  <!--引入评论-->
-  {% include extends/disqus.html %}
+		<!--下一页-->
+		{% if page.next %}
+		<li class="next">
+			<a href="{{ site.BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
+		</li>
+		{% else %}
+		<li class="next disabled">
+			<a>Next &rarr;</a>
+		</li>
+		{% endif %}
+	</ul>
+	<!--引入评论-->
+	{% include extends/disqus.html %}
 </div>

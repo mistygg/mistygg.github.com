@@ -4,7 +4,9 @@ layout: default
 {% for post in paginator.posts %}
 <article class="desc-post">
 	<!--标题-->
-	<h1><a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h1>
+	<h1>
+		<a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+	</h1>
 
 	<!--日期-->
 	<div class="desc">
@@ -20,13 +22,13 @@ layout: default
 	{% if post.fullview %}
 		<p>{{ post.content }}</p>
 	{% else %}
-			{% if post.shortinfo %}
-				<p>{{ post.shortinfo }}</p>
-			{% elsif post.description %}
-				<p>{{ post.description }}</p>
-			{% else %}
-				<p>{{ post.excerpt }}</p>
-			{% endif %}
+		{% if post.shortinfo %}
+			<p>{{ post.shortinfo }}</p>
+		{% elsif post.description %}
+			<p>{{ post.description }}</p>
+		{% else %}
+			<p>{{ post.excerpt }}</p>
+		{% endif %}
 	{% endif %}
 	<a class="btn btn-info readmore" href="{{ post.url }}" role="button">ReadMore</a>
 </article>
@@ -99,6 +101,7 @@ layout: default
 		{% assign ppPage = nil %}
 		{% endif %}
 		{% endif %}
+
 		{% endfor %}
 
 		{% if paginator.next_page %}
