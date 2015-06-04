@@ -2,7 +2,8 @@ body {
     background: #e8e8e8;
     line-height: 1.5;
     font-weight: 500;
-    font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;;
+    font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
+		margin-top: 75px;
 }
 pre {
     padding: 0px;
@@ -27,7 +28,16 @@ h3 {
 h1 > a {
     color: #000000;
 }
-
+.scroll-top{
+		position:fixed;
+		bottom:80px;
+		right:200px;
+		display:none;
+		font-size:30px;
+		cursor:pointer;
+		opacity:.4;
+		z-index:199
+}
 h1 > a:hover {
     color: #5bc0de;
     text-decoration: none;
@@ -51,15 +61,12 @@ h1 > a:hover {
 }
 .navbar-inverse {
     background-image: none;
-}
-.page-content {
-    margin-top: 75px;
+		border-radius: 0px;
 }
 
 .fa {
-    color: #5bc0de;
+		color: #5bc0de;
 }
-
 .desc-post {
     background: #ffffff;
     padding-right: 20px;
@@ -111,6 +118,7 @@ footer p {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
+		font-size: 10px;
 }
 
 /*timeline*/
@@ -138,9 +146,7 @@ footer p {
     font-size: 12px;
 }
 
-
 /*archive*/
-
 .archive h2 {
     font-size: 16px;
 }

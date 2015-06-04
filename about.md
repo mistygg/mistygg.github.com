@@ -32,16 +32,5 @@ permalink: /about/
 			{{ site.user.desc }}
 		</p>
 	{% endif %}
-	
-	{% if site.user.weixin %}
-		<h2>WeiXin</h2>
-		<p>
-			{% if site.model == 'pub' %}
-				<img src = "http://7xjddm.com1.z0.glb.clouddn.com/weixin.jpg">
-			{% else %}
-				<img src = "/assets/images/weixin.jpg">
-			{% endif %}
-		</p>
-	{% endif %}
 	{% include extends/disqus.html %}
 </div>
