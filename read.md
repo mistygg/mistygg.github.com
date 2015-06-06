@@ -10,6 +10,7 @@ permalink: /read/
 	<li><i class="fa fa-book"></i>&nbsp;&nbsp;《高性能JavaScript》</li>
 	<li><i class="fa fa-book"></i>&nbsp;&nbsp;《JavaScript语言精粹》</li>
 	<li><i class="fa fa-book"></i>&nbsp;&nbsp;《JavaScript DOM高级程序设计》</li>
+	<li><i class="fa fa-book"></i>&nbsp;&nbsp;《jQuery权威指南》</li>
 	<li><i class="fa fa-book"></i>&nbsp;&nbsp;《深入浅出node》</li>
 	<li><i class="fa fa-book"></i>&nbsp;&nbsp;《CSS权威指南》(第3版)</li>
 	<li><i class="fa fa-book"></i>&nbsp;&nbsp;《图解CSS3》</li>

@@ -28,15 +28,15 @@ h3 {
 h1 > a {
     color: #000000;
 }
-.scroll-top{
-		position:fixed;
-		bottom:80px;
-		right:200px;
-		display:none;
-		font-size:30px;
-		cursor:pointer;
-		opacity:.4;
-		z-index:199
+.scroll-top {
+		position: fixed;
+		bottom: 80px;
+		right: 200px;
+		display: none;
+		font-size: 30px;
+		cursor: pointer;
+		opacity: .4;
+		z-index: 199
 }
 h1 > a:hover {
     color: #5bc0de;
