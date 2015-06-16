@@ -25,7 +25,7 @@ sudo apt-get install subversion
 #应用名称为test
 sudo mkdir /var/www/test -p
 #在test之中创建index.php测试文件
-touch index.php
+sudo touch index.php
 ```
 
 ### 创建```Subversion```的文件目录 ###
@@ -107,7 +107,7 @@ kill -9 Pid(你看到的Pid)
 
 删除```/var/www/test```目录；
 
-执行 ```sudo svn co svn://127.0.0.1/test```
+执行 ```sudo svn co file:///home/pcc/test```
 
 然后输入用户名和密码即可。
 
