@@ -43,6 +43,15 @@ h1 > a:hover {
     text-decoration: none;
 }
 
+#headerimg {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    ;
+}
+
 @media (min-width: 768px) {
     .navbar {
         min-height: 40px;
