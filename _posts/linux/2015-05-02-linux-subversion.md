@@ -2,6 +2,7 @@
 layout: post
 title:  Linux 配置 Subversion
 categories: linux
+key: 1437062940
 ---
 
 目前最为流行的版本控制器有两种，一种是```Subversion```，另一种就是```Git```。当然，随着科学技术的发展，```Git```也已经有了覆盖```Subversion```之势。但是，在一些旧的项目或者是一些有```文化底蕴```的公司依旧使用```Subversion```进行版本控制。这篇文章将主要介绍如何在```Ubuntu```上安装和配置```Subversion```。

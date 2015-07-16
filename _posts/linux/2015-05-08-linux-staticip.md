@@ -2,6 +2,7 @@
 layout: post
 title:  Linux 配置静态 IP
 categories: linux
+key: 1437062942
 ---
 
 我现在的开发机器为```acer```，但是一般的开发环境还是在```Linux```之中，所以采用的是Windows的实体机 ```remote``` Linux的虚拟机的方式进行开发。由于，经常要使用```ssh```的方式进行虚拟机的远程操作，甚至有时候需要虚拟机在局域网内被访问，所以难免涉及到静态```IP```的配置。这篇文章主要记录的是```Ubuntu```和```CentOS```的静态IP的配置方式。

@@ -2,6 +2,7 @@
 layout: post
 title:  Linux 给普通用户设置 sudo 权限
 categories: linux
+key: 1437062941
 ---
 
 Linux的优势之一是权限控制，但是让新手困惑的也是权限控制。在安装完Ubuntu的时候默认的用户是具有sudo权限的，也就是可以从该用户切换到root用户，但是新建的用户一般是没有sodu权限的。这篇文章就简单的介绍如何给Ubuntu系统新建的用户添加sudo权限。
