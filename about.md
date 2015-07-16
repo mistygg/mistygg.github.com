@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+key: 1437063393
 ---
 <div class="about">
 	<h2>info</h2>
@@ -32,5 +33,5 @@ permalink: /about/
 			{{ site.user.desc }}
 		</p>
 	{% endif %}
-	{% include extends/disqus.html %}
+	{% include extends/duoshuo.html %}
 </div>

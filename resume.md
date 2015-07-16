@@ -2,6 +2,7 @@
 layout: page
 title: Resume
 permalink: /resume/
+key: 1437063370
 ---
 <div class="read">
 <h2>lang</h2>
@@ -140,5 +141,5 @@ permalink: /resume/
 	<a href="http://bestfiveenglish.com">bestfiveenglish.com</a> <span>（HTML，CSS，JavaScript）</span>
 </p>
 
-{% include extends/disqus.html %}
+{% include extends/duoshuo.html %}
 </div>

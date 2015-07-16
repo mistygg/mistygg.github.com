@@ -2,6 +2,7 @@
 layout: page
 title: Read
 permalink: /read/
+key: 1437063456
 ---
 <div class="read">	
 	<h2>专业书籍</h2>
@@ -36,5 +37,8 @@ permalink: /read/
 	<li><i class="fa fa-book"></i>&nbsp;&nbsp;《黄金时代》</li>
 	<li><i class="fa fa-book"></i>&nbsp;&nbsp;《三十而立》</li>
 	<li><i class="fa fa-book"></i>&nbsp;&nbsp;《我的精神家园》</li>
+
+	{% include extends/duoshuo.html %}
+
 </div> 
 
