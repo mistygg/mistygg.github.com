@@ -1,5 +1,5 @@
 body {
-    background: #e8e8e8;
+    background: #f2f2f2;
     line-height: 1.5;
     font-weight: 500;
     font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -24,31 +24,34 @@ h3 {
     font-size: 16px;
 }
 
-
-h1 > a {
-    color: #000000;
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
 }
 .scroll-top {
 		position: fixed;
 		bottom: 80px;
-		right: 160px;
+		right: 60px;
 		display: none;
 		font-size: 30px;
 		cursor: pointer;
 		opacity: .4;
 		z-index: 199
 }
+
 h1 > a:hover {
     color: #5bc0de;
     text-decoration: none;
 }
 
 #headerimg {
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    width: 30px;
-    height: 30px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
 }
 
 @media (min-width: 768px) {
@@ -67,25 +70,28 @@ h1 > a:hover {
         padding-top: 0;
     }
 }
-.navbar-inverse {
+
+.header {
     background-image: none;
-		border-radius: 0px;
+	border-radius: 0px;
+    background: #FFF;
+    border-bottom: 0px;
 }
 
 .fa {
-		color: #5bc0de;
+	color: #5bc0de;
 }
+
 .desc-post {
-    background: #ffffff;
-    padding-right: 20px;
+    background: #FFF;
+    padding-top: 4px;
+    padding-bottom: 10px;
     padding-left: 20px;
-    padding-top: 2px;
-    padding-bottom: 55px;
-    min-height: 200px;
+    padding-right: 20px;
+    padding-bottom: 10px;
     margin-left: -10px;
     margin-right: -10px;
-    margin-bottom: 20px;
-    border-radius: 2px;
+    margin-bottom: 8px;
 }
 
 .desc-post h1 {
@@ -93,6 +99,7 @@ h1 > a:hover {
 }
 .pagenav {
     float: right;
+    margin-right: -10px;
 }
 .readmore {
     float: right;
@@ -100,15 +107,14 @@ h1 > a:hover {
 }
 /*post页面样式*/
 .post {
-    background: #ffffff;
+    background: #FFF;
     padding: 20px;
     padding-top: 4px;
     margin-left: -10px;
     margin-right: -10px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 30px #d3d3d3 ;
-    -moz-box-shadow: 0px 0px 30px #d3d3d3;
-    box-shadow: 0px 0px 30px #d3d3d3;
+    /*-webkit-box-shadow: 0px 0px 30px #d3d3d3 ;*/
+    /*-moz-box-shadow: 0px 0px 30px #d3d3d3;*/
+    /*box-shadow: 0px 0px 30px #d3d3d3;*/
 }
 
 .post img {
@@ -126,7 +132,7 @@ footer p {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-		font-size: 10px;
+	font-size: 10px;
 }
 
 /*timeline*/
@@ -148,6 +154,7 @@ footer p {
 
 .category li {
     list-style: none;
+    line-height: 26px;
 }
 
 .category span {
@@ -163,6 +170,7 @@ footer p {
 }
 .archive li {
     list-style: none;
+    line-height: 26px;
 }
 .archive span {
     font-size: 12px;
@@ -178,6 +186,7 @@ footer p {
 
 .read li {
     list-style: none;
+    line-height: 26px;
 }
 
 .read span {
@@ -208,3 +217,53 @@ footer p {
 .about h1,h2 {
     padding-bottom: 5px;
 }
+
+#abouthead {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#abouthead:hover {
+     -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.navbar-toggle {
+    background: #FFF;
+}
+.navbar-toggle .icon-bar  {
+    background: #000;
+}
+.header-about {
+    text-align: center;
+    background: #FFF;
+    border-radius: 3px;
+}
+
+.header-about p {
+    text-align: left;
+}
+
+.post-title {
+    padding-bottom: 10px;
+}
+
+.notice {
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+}
+

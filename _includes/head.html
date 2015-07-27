@@ -20,6 +20,10 @@
 		<link rel="stylesheet" href="{{ site.dev.css }}font-awesome.min.css"/>
 	{% endif %}
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	{% if site.model == 'pub' %}
+		<link rel="icon" href="{{ site.pub.image }}favicon.ico" type="image/x-icon">
+	{% else %}
+		<link rel="icon" href="{{ site.dev.image }}favicon.ico" type="image/x-icon">
+	{% endif %}
 </head>
 

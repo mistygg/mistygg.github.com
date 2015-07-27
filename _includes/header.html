@@ -1,9 +1,13 @@
 <header>
 	<!--导航菜单-->
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar header navbar-fixed-top">
 		<div class="container-fluid">
 			<span class="navbar-brand"><a href="/">
-				<img id="headerimg" src="http://7xjddm.com1.z0.glb.clouddn.com/header.jpeg"></a>
+				{% if site.model == 'pub' %}
+					<img id="headerimg" src="{{ site.pub.image }}header.jpeg"></a>
+				{% else %}
+					<img id="headerimg" src="{{ site.dev.image }}header.jpeg"></a>
+				{% endif %}
 			</span>
 			<div class="navbar-header">
 				<button type="button" class ="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">

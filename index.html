@@ -4,9 +4,8 @@ layout: default
 {% for post in paginator.posts %}
 <article class="desc-post">
 	<!--标题-->
-	<h1>
-		<a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-	</h1>
+		<a href="{{ site.BASE_PATH }}{{ post.url }}"><h1>{{ post.title }}</h1></a>
+	
 
 	<!--日期-->
 	<div class="desc">
@@ -30,7 +29,6 @@ layout: default
 			<p>{{ post.excerpt }}</p>
 		{% endif %}
 	{% endif %}
-	<a class="btn btn-info btn-xs readmore" href="{{ post.url }}" role="button">查看全文</a>
 </article>
 {% endfor %}
 
