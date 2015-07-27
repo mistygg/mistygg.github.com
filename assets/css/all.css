@@ -251,6 +251,7 @@ footer p {
     text-align: center;
     background: #FFF;
     border-radius: 3px;
+
 }
 
 .header-about p {
@@ -265,5 +266,10 @@ footer p {
     font-size: 12px;
     text-align: center;
     font-style: italic;
+}
+.header-about hr {
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 10px;
 }
 
