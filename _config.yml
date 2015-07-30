@@ -1,10 +1,10 @@
-title: searchpcc | 一个正在老去的90后程序员
-home: searchpcc
+title: mistygg | 时间过的好快～
+home: mistygg
 paginate: 5
 email: your-email@domain.com
-production_url: http://searchpcc.com
+production_url: http://mistygg.github.io
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://searchp.cc" # the base hostname & protocol for your site
+url: "http://mistygg.github.io" # the base hostname & protocol for your site
 permalink: /:year:month:day.html
 
 # Build settings
