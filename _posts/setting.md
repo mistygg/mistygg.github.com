@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  CodeIgniter集成Smarty
-categories: [php]
+title:  setting
 key: 1437062950
 ---
 {
