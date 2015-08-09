@@ -17,17 +17,14 @@ kramdown:
   auto_id_prefix: 'id-'
 
 # 网站描述
-description:  一个90后的个人网站。 IT，php，Java，Python 等等。邮箱：i@searchp.cc
+description: 不积跬步无以至千里。邮箱：wangrui.hust@gmail.com
 # 用户名，用来显示自己相关网络账号信息的。about.md之中。
-username: searchpcc
+username: mistygg
 
 user:
-  email: i@searchp.cc
-  github: http://github.com/searchpcc
-  weibo: http://weibo.com/searchpcc
-  twitter: http://twitter.com/searchpcc
-  weixin: searchpcc
-  desc: 90后，有轻度的强迫症，有轻度的代码洁癖，热爱互联网，喜欢编程，目前是PHP Web开发者和爱好者。
+  email: wangrui.hust@gmail.com
+  github: http://github.com/mistygg
+  desc: iOS开发者。
 
 # 这里替换成线上的静态资源的链接。 主要最后的"/"。也要注意css使用的字体的链接。
 pub:
