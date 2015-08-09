@@ -17,12 +17,12 @@ kramdown:
   auto_id_prefix: 'id-'
 
 # 网站描述
-description: 不积跬步无以至千里。邮箱：wangrui.hust@gmail.com
+description: 不积跬步无以至千里。邮箱：cppery@gmail.com
 # 用户名，用来显示自己相关网络账号信息的。about.md之中。
 username: mistygg
 
 user:
-  email: wangrui.hust@gmail.com
+  email: cppery@gmail.com
   github: http://github.com/mistygg
   desc: iOS开发者。
 
