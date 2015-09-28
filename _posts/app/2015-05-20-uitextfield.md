@@ -2,7 +2,7 @@
 layout: post
 title: UITextField键盘遮挡问题 
 categories: [app]
-key: 1437804900
+key: 1437804801
 ---
 
 ## UITextField键盘遮挡问题的解决
@@ -82,9 +82,3 @@ if ( (contentOffsetPoint.y == _tableView.contentSize.height - frame.size.height)
 ### 4.如何恢复？
 
 这个也不用多说了。
-
-
-
-
-
-
